@@ -1,8 +1,13 @@
 on:
   push:
+    branches:
+    - main
+  pull-request:
+    branches:
+    - main
   workflow_dispatch:
 
-name: OSX and Conda
+name: OSX ARM64 and Conda
 
 env:
   GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}

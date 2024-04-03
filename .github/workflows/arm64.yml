@@ -1,10 +1,9 @@
-name: test build deploy
+name: Linux ARM64
 
 on:
-  # push:
-  #   branches:
-  #     - main
-  #     - h5s_unlimited
+  push:
+    branches:
+    - main
   workflow_dispatch:
   
 env:
