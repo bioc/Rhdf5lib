@@ -35,7 +35,7 @@ pkgconfig <- function(opt = c("PKG_CXX_LIBS", "PKG_C_LIBS", "PKG_CXX_HL_LIBS", "
     
     ## add "-ucrt" to the library directory if needed
     ## this might be removed in the future - 2021-01-20
-    if(!is.null(R.version$crt) && R.version$crt == "ucrt") {
+    if(!is.null(R.version$crt) && R.version$crt == "ucrt" && R.version$arch == "x86_64") {
       patharch <- paste0(patharch, "-ucrt")
     }
     
