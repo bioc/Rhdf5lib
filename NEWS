@@ -8,6 +8,10 @@ Bug fixes:
   when running R installed via conda. (Thanks to @eyalbenda for reporting, 
   https://github.com/grimbough/Rhdf5lib/issues/54)  Backported to 
   Rhdf5lib version 1.24.2
+  o The configure script has been updated to build from source on 
+  Windows/aarch64 architecture, rather than trying to use the unsuitable
+  pre-compiled Windows x64 binaries.  Thanks to Tomas Kalibera for the 
+  patch.
 
   
 Version 1.24
